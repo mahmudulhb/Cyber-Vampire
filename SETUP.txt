@@ -1,0 +1,99 @@
+# Sensitive Data Redaction (Flask App)
+
+This project is a simple web-based tool that can detect and redact sensitive information such as:
+- Names
+- Locations
+- Dates
+- Times
+- Emails
+- IP addresses
+- Phone numbers
+- Credit card numbers
+- URLs
+- SSN
+- Custom regex-based entities
+
+It uses:
+- Python (Flask)
+- spaCy NLP (en_core_web_lg)
+- Custom Regex Patterns
+- HTML frontend
+
+-----------------------------------
+## 🚀 SETUP GUIDE (For Everyone)
+-----------------------------------
+
+###  Install Python
+Download and install Python (3.9 or later):
+https://www.python.org/downloads/
+
+Make sure “Add to PATH” is checked.
+
+---
+
+###  Install Required Python Packages
+Open CMD or Terminal and run:
+
+pip install flask spacy
+python -m spacy download en_core_web_lg
+
+---
+
+###  Project Folder Structure
+
+project-folder/
+ ├── app.py
+ ├── templates/
+ │     └── index.html
+ └── static/
+       └── style.css  (optional)
+
+---
+
+###  Run the Flask App
+
+python app.py
+
+
+---
+
+###  Deploy on GitHub
+Upload all files to your GitHub repo:
+- app.py
+- templates/index.html
+- static/ (optional)
+- README.md or SETUP.txt
+
+---
+
+
+Add a new web service and connect your GitHub repo.
+
+
+
+###  How to Use
+1. Open the web page
+2. Paste any text
+3. Select **Mask** or **Remove**
+4. Click **Redact**
+5. View:
+   - Redacted text
+   - Detected entities (with labels)
+
+---
+
+###  Troubleshooting
+
+**spaCy model error:**  
+Run:
+python -m spacy download en_core_web_lg
+
+**Flask error:**  
+Check Python version (must be 3.9+).
+
+**Regex not working:**  
+Make sure your app.py file contains updated REGEX_PATTERNS.
+
+-----------------------------------
+          Cyber-Vampire
+-----------------------------------
